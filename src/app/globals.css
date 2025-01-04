@@ -2,8 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("/font/casio-fx-9860gii.ttf") format("truetype");
+  font-weight: 400; /* Adjust as needed */
+  font-style: normal; /* Adjust as needed */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1200px; /* Adjust as needed */
   margin: 0 auto;
-  padding: 1rem; /* Adjust as needed */
+  padding: 1rem; /* Adjust as needed */
+}
+
+.bg-stars-pattern {
+  background-image: url("/assets/star-bg.svg"); /* Placeholder for background pattern */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-network-pattern {
+  background-image: url("/assets/network-pattern.svg"); /* Placeholder for background pattern */
+  background-repeat: no-repeat;
+  background-size: cover;
 }
