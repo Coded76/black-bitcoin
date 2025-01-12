@@ -127,56 +127,154 @@ const Home = () => {
         </section>
 
         {/* Tokenomics Section */}
-        <section className="relative bg-[#1C1C1C] py-16 px-8 text-center text-white">
+        <section className="relative container bg-[#1C1C1C] py-16 px-8 text-center text-white">
           <h2 className="text-[40px] font-bold mb-10">
             BlackBitcoin Tokenomics
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div className="bg-[#444444] p-6 rounded-lg shadow-md">
+          <div className="grid grid-cols-2 mt-20 gap-10">
+            <div className="hover:scale-105 transform transition duration-500 ease-in-out">
               <Image
-                src="/assets/tokenomics-icon.svg"
+                src="/assets/frame1.svg"
                 alt="Liquidity"
-                width={80}
-                height={80}
+                width={300}
+                height={300}
                 className="mx-auto mb-4"
               />
-              <h3 className="text-[20px] font-bold mb-2">Liquidity</h3>
-              <p className="text-[18px]">Locked</p>
             </div>
-            <div className="bg-[#444444] p-6 rounded-lg shadow-md">
+            <div className="hover:scale-105 transform transition duration-500 ease-in-out">
               <Image
-                src="/assets/tokenomics-icon.svg"
-                alt="Mint & Freeze"
-                width={80}
-                height={80}
+                src="/assets/frame2.svg"
+                alt="Utility"
+                width={300}
+                height={300}
                 className="mx-auto mb-4"
               />
-              <h3 className="text-[20px] font-bold mb-2">Mint & Freeze</h3>
-              <p className="text-[18px]">Revoked</p>
             </div>
-            <div className="bg-[#444444] p-6 rounded-lg shadow-md">
+            <div className="hover:scale-105 transform transition duration-500 ease-in-out">
               <Image
-                src="/assets/tokenomics-icon.svg"
-                alt="Taxes"
-                width={80}
-                height={80}
+                src="/assets/frame3.svg"
+                alt="Community"
+                width={300}
+                height={300}
                 className="mx-auto mb-4"
               />
-              <h3 className="text-[20px] font-bold mb-2">Taxes</h3>
-              <p className="text-[18px]">0-0</p>
             </div>
-            <div className="bg-[#444444] p-6 rounded-lg shadow-md">
+            <div className="hover:scale-105 transform transition duration-500 ease-in-out">
               <Image
-                src="/assets/tokenomics-icon.svg"
-                alt="Total Supply"
-                width={80}
-                height={80}
+                src="/assets/frame4.svg"
+                alt="Governance"
+                width={300}
+                height={300}
                 className="mx-auto mb-4"
               />
-              <h3 className="text-[20px] font-bold mb-2">Total Supply</h3>
-              <p className="text-[18px]">100M</p>
             </div>
           </div>
+        </section>
+        <section>
+          <div className="min-h-screen text-white flex flex-col items-center py-12 px-4">
+            <h1 className="text-[52px] font-bold mb-12">
+              How To Buy Blackbitcoin
+            </h1>
+
+            <div className="space-y-8 w-full max-w-4xl">
+              {/* Step 1 */}
+              <div className="bg-[#444444] relative rounded-lg h-[40vh] p-10 flex items-center justify-between shadow-lg">
+                <div className="flex flex-col space-y-4">
+                  <div className="flex flex-col gap-5">
+                    <span className="w-8 h-8 flex items-center justify-center text-black bg-[#767676] rounded-full font-bold">
+                      1
+                    </span>
+                    <span className="text-lg md:text-xl font-medium">
+                      Click to Copy Contract Address
+                    </span>
+                  </div>
+                  <button
+                    className="bg-[#FFFDD0] text-black px-6 py-2 rounded-[48px] transition"
+                    // onClick={() => navigator.clipboard.writeText('0x5767DHJW01I3KHUZFJ')}
+                  >
+                    0x5767DHJW01I3KHUZFJ
+                  </button>
+                </div>
+                <div className="absolute bottom-0 right-20">
+                  <img
+                    src="/assets/how-to-buy.svg"
+                    alt="Swap Icon"
+                    className="h-[250px]"
+                  />
+                </div>
+              </div>
+
+              {/* Step 2 */}
+              <div className="bg-[#444444] relative rounded-lg h-[40vh] p-10 flex items-center justify-between shadow-lg">
+                <div className="flex flex-col space-y-4">
+                  <div className="flex flex-col gap-5">
+                    <span className="w-8 h-8 flex items-center justify-center text-black bg-[#767676] rounded-full font-bold">
+                      2
+                    </span>
+                    <span className="text-lg md:text-xl font-medium">
+                      Open Solana Wallet
+                    </span>
+                  </div>
+                  <button className="bg-[#FFFDD0] text-black px-6 py-2 rounded-[48px] transition">
+                    Open Phantom
+                  </button>
+                </div>
+                <div className="absolute bottom-0 right-20">
+                  <img
+                    src="/assets/how-to-buy.svg"
+                    alt="Swap Icon"
+                    className="h-[250px]"
+                  />
+                </div>
+              </div>
+
+              {/* Step 3 */}
+              <div className="bg-[#444444] relative rounded-lg h-[40vh] p-10 flex items-center justify-between shadow-lg">
+                <div className="flex flex-col space-y-4">
+                  <div className="flex flex-col gap-5">
+                    <span className="w-8 h-8 flex items-center justify-center text-black bg-[#767676] rounded-full font-bold">
+                      3
+                    </span>
+                    <span className="text-[30px] font-medium">
+                      Swap to Blackbitcoin
+                    </span>
+                  </div>
+                  <button className="bg-[#FFFDD0] text-black px-6 py-2 rounded-[48px] transition">
+                    Open Phantom
+                  </button>
+                </div>
+                <div className="absolute bottom-0 right-20">
+                  <img
+                    src="/assets/how-to-buy.svg"
+                    alt="Swap Icon"
+                    className="h-[250px]"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="container">
+          {/* Community Section */}
+          <div className="mt-16 bg-black rounded-[40px] py-20 px-6 text-center">
+            <h2 className="text-2xl md:text-3xl font-bold mb-8">
+              Join Our Global Community
+            </h2>
+            <div className="flex justify-center space-x-6">
+              <button className="bg-[#FFFDD0] text-black w-[269px] h-[50px] rounded-[48px] transition">
+                Twitter
+              </button>
+              <button className="bg-[#FFFDD0] text-black w-[269px] h-[50px] rounded-[48px] transition">
+                Telegram
+              </button>
+            </div>
+          </div>
+
+          {/* Footer */}
+          <footer className="mt-12 text-center text-[#D5D5D5] text-[20px]">
+            &copy; Copyright 2025 - BlackBitcoin. All rights reserved.
+          </footer>
         </section>
       </div>
     </>
